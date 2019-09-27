@@ -1,0 +1,27 @@
+.wrapper {
+    width: 1300px;
+    margin: auto;
+}
+
+.header {
+    display: flex;    
+}
+
+.header::before {
+    content: '';
+    display: block;    
+    position: absolute;
+    width: 1300px;
+    height: 566px;
+    z-index: -1;
+    background: url("assets/images/header_background.png") center / cover;
+}
+
+.main-menu ul {    
+    display: flex;
+    list-style: none;
+}
+
+.main-slider {    
+    display: flex;
+}
