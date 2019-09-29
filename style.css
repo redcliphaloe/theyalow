@@ -1,10 +1,67 @@
+@font-face{
+    font-family: "LucidaSans-Italic";
+    src: url("assets/fonts/LucidaSans-Italic.ttf") format("truetype");  
+    }    
+
+@font-face{
+    font-family: "SegoeWP";
+    src: url("assets/fonts/SegoeWP.ttf") format("truetype");    
+    }         
+
+@font-face{
+    font-family: "SegoeUI-Light";
+    src: url("assets/fonts/SegoeUI-Light.ttf") format("truetype");  
+    }     
+
+@font-face{
+    font-family: "PTSans-Regular";
+    src: url("assets/fonts/PTSans-Regular.ttf") format("truetype"); 
+    }        
+
+@font-face{
+    font-family: "SegoeWP-Light";
+    src: url("assets/fonts/SegoeWP-Light.ttf") format("truetype");  
+    }      
+
+@font-face{
+    font-family: "SegoeUI-Bold";
+    src: url("assets/fonts/SegoeUI-Bold.ttf") format("truetype");   
+    }   
+
+@font-face{
+    font-family: "SegoeUI";
+    src: url("assets/fonts/SegoeUI.ttf") format("truetype");   
+    }       
+    
+@font-face{
+    font-family: "ArialMT";
+    src: url("assets/fonts/ArialMT.ttf") format("truetype");  
+    }     
+    
+@font-face{
+    font-family: "OpenSans";
+    src: url("assets/fonts/OpenSans.ttf") format("truetype");  
+    }    
+    
+@font-face{
+    font-family: "PTSans-NarrowBold";
+    src: url("assets/fonts/PTSans-NarrowBold.ttf") format("truetype"); 
+    }     
+
+* {
+    outline: 1px dotted lightgray;
+}
+
 .wrapper {
-    width: 1300px;
+    max-width: 1300px;
     margin: auto;
 }
 
 .header {
-    display: flex;    
+    display: flex;   
+    justify-content: space-around;
+    align-items: baseline;
+    height: 168px; 
 }
 
 .header::before {
@@ -12,16 +69,161 @@
     display: block;    
     position: absolute;
     width: 1300px;
-    height: 566px;
+    height: 1136px;
     z-index: -1;
     background: url("assets/images/header_background.png") center / cover;
 }
 
+.header__logo {    
+    margin: 0px;
+    font-family: "LucidaSans-Italic", sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 41.04912px;
+}
+
 .main-menu ul {    
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 453px;
+    background: #f5c506;
+}
+
+.main-menu li {
+    width: 33.3%;
+}
+
+.main-menu a {    
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+    color: #9b7d08;    
+    border-left: 1px solid #dcb105;    
+}
+
+.main-menu li:first-of-type a {
+    border: none;
+} 
+
+.main-slider {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 327px;
+}
+
+.main-slider__left-button,
+.main-slider__right-button {   
+    width: 32px;
+    height: 57px;
+    background: #f5c506;
+    border: none;
+}
+
+.main-slider__text {
+    font-family: "Asap", sans-serif;
+    font-weight: normal;
+    color: white;      
+    font-size: 63.04912px;
+}
+
+.main-slider__text span {
+    color: #f5c506;
+}
+
+.features {    
+    margin-top: 71px;
+    height: 212px;
+    background: url("assets/images/features_desktop-background.png") center / cover;
+}
+
+.features ul {    
     display: flex;
     list-style: none;
 }
 
-.main-slider {    
-    display: flex;
+.features ul li {    
+    width: 340px;
 }
+
+.description {
+    height: 509px;
+    background: url("assets/images/description_background.png") center / cover;
+}
+
+.tweets {
+    display: none;
+}
+
+.screens {
+    height: 499px;
+    background: url("assets/images/screens_desktop-background.png") center / cover;
+}
+
+.footer {
+    height: 64px;
+    background: #4c4c4c;
+}
+
+@media (max-width: 640px) {
+    .header {
+        height: 62px; 
+    }
+
+    .header__logo {
+        width: 186px; 
+    }    
+
+    .header::before {
+        display: none;
+    }
+
+    .main-slider__video {
+        width: 640px;
+    }
+
+    .main-slider__left-button,
+    .main-slider__right-button,
+    .main-slider__text {
+        display: none;
+    }
+
+    .features {    
+        margin-top: 0px;
+        height: 174px;
+        border: none;
+    }
+
+    .description {
+        height: 253px;
+        background: none;
+    }
+
+    .tweets {
+        display: block;
+        height: 233px;
+        background: #f5c507;
+    }
+
+    .screens {
+        height: 487 px;
+        background: #474747;
+    }
+}
+
+.a1 {font-family: "LucidaSans-Italic"}
+.a2 {font-family: "OpenSans"}
+.a3 {font-family: "PTSans-Regular"}
+.a4 {font-family: "SegoeUI-Light"}
+.a5 {font-family: "SegoeWP-Light"}
+.a6 {font-family: "ArialMT"}
+.a7 {font-family: "Asap-Regular"}
+.a8 {font-family: "PTSans-NarrowBold"}
+.a9 {font-family: "SegoeUI"}
+.a10 {font-family: "SegoeUI-Bold"}
+.a11 {font-family: "SegoeWP"}
+div {font-size: 40px}
