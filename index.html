@@ -5,54 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>THEYALOW</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />    
     <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header wrapper">
-        <h1 class="header__logo">THEYALOW</h1>
-        <nav class="main-menu">
+        <h1 class="header__logo">TheYalow</h1>
+        <nav class="header-menu">
             <ul>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a class="header-menu__about-us" href="#">About Us</a></li>
+                <li><a class="header-menu__services" href="#">Services</a></li>
+                <li><a class="header-menu__contact" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main class="wrapper">
-        <section class="main-slider">
-            <button class="main-slider__left-button"></button>
-            <video class="main-slider__video" src="" poster="assets/images/main-slider__video_poster.png" controls></video>
-            <h2 class="main-slider__text"><span>THE COOL</span><br>THE MINIMAL</h2>
-            <button class="main-slider__right-button"></button>
+        <section class="top-slider">
+            <button class="top-slider__left-button"></button>
+            <video class="top-slider__video" src="" poster="assets/images/top-slider__video_poster.png" controls></video>
+            <video class="top-slider__video_mob" src="" poster="assets/images/top-slider__video_poster-mob.png" controls></video>            
+            <p class="top-slider__text"><span>The cool</span><br>The minimal</p>
+            <button class="top-slider__right-button"></button>
         </section>
         <section class="features">
             <ul>
-                <li>BETTER DESIGN</li>
-                <li>CUSTOMIZE</li>
-                <li>ITS FREE</li>
+                <li class="features__better-design">better design</li>
+                <li class="features__customise">customise</li>
+                <li class="features__its-free">Its Free</li>
             </ul>
         </section>
-        <section class="description">          
-        </section>
-        <section class="tweets">          
-        </section>       
-        <section class="screens">           
+        <section class="middle-slider">   
+            <h2>Lorem ipsum dolor sit amet</h2>   
+            <div class="middle-slider__container">
+                <p class="middle-slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p> 
+                <video class="middle-slider__video" src="" poster="assets/images/middle-slider__video_poster.png" controls></video>   
+                <div class="middle-slider__img-block"></div>
+                <div class="middle-slider__tweets">          
+                    <p>Daily Mobile UI Design Inspiration #1<br>via @cssauthor</p> 
+                    <p>Daily Mobile UI Design Inspiration #1<br>via @cssauthor</p> 
+                    <p>Daily Mobile UI Design Inspiration #1<br>via @cssauthor</p> 
+                    <form action="">
+                        <input type="text">
+                        <input type="submit" value="Tweet">
+                    </form>
+                </div>  
+            </div>
+            <p class="middle-slider__calend-sheet"><span>25</span><span>APRIL</span></p>
+            <input class="middle-slider__runner" type="range" name="" id="" min="1" max="10" value="4">
+        </section>     
+        <section class="info">  
+            <h2>Lorem ipsum dolor sit amet</h2>     
+            <img class="info__img" src="assets/images/info__img.png" alt="">
+            <ul> 
+                <li>Sed ut perspiciatis unde omnis</li>
+                <li>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing </li>
+                <li>Sed ut perspiciatis unde omnis</li>
+                <li>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing </li>
+            </ul>  
         </section>           
     </main>
-    <footer class="footer wrapper"></footer>
-    <!-- <div class="a1">LucidaSans-Italic</div>
-    <div class="a2">SegoeWP</div>
-    <div class="a3">Asap-Regular</div>
-    <div class="a4">SegoeUI-Light</div>
-    <div class="a5">PTSans-Regular</div>
-    <div class="a6">SegoeWP-Light</div>
-    <div class="a7">SegoeUI-Bold</div>
-    <div class="a8">SegoeUI</div>
-    <div class="a9">ArialMT</div>
-    <div class="a10">OpenSans</div>
-    <div class="a11">PTSans-NarrowBold</div>    
-    <div class="a11">Default</div>  -->
+    <footer class="footer wrapper">
+        <h3 class="footer__logo">TheYalow</h3>
+    </footer>
 </body>
 </html>
