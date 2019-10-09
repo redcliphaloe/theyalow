@@ -23,6 +23,12 @@
         src: url("assets/fonts/ArialMT.ttf") format("truetype"); 
         }   
 
+.body::before {
+    content: "desktop";
+    position: absolute;
+    visibility: hidden;
+}
+
 .wrapper {
     max-width: 1300px; 
     margin: auto;    
@@ -518,6 +524,10 @@
 }
 
 @media (max-width: 640px) {
+    .body::before {
+        content: "mobile";
+    }
+
     .header {
         height: 62px;
         background: linear-gradient(to bottom, #626262, #464646);
